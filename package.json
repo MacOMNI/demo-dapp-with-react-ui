@@ -1,6 +1,6 @@
 {
   "name": "demo-dapp-react-ui",
-  "homepage": "https://macomni.github.io/demo-dapp-with-react-ui/",
+  "homepage": "https://macomni.github.io/demo-dapp-with-react-ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "build:dev": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d vite build"
   },
   "dependencies": {
     "@ton-community/assets-sdk": "^0.0.4",
