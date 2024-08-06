@@ -10,7 +10,7 @@
     "build:dev": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d vite build"
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@ton-community/assets-sdk": "^0.0.4",
