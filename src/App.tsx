@@ -5,7 +5,12 @@ import {TxForm} from "./components/TxForm/TxForm";
 import {Footer} from "./components/Footer/Footer";
 import {TonProofDemo} from "./components/TonProofDemo/TonProofDemo";
 import {CreateJettonDemo} from "./components/CreateJettonDemo/CreateJettonDemo";
+// 引入 vConsole
+import VConsole from 'vconsole';
 
+// 初始化 vConsole
+const vConsole = new VConsole();
+console.log('Hello, vConsole!');
 function App() {
   return (
       <TonConnectUIProvider
@@ -13,6 +18,16 @@ function App() {
           uiPreferences={{ theme: THEME.DARK }}
           walletsListConfiguration={{
             includeWallets: [
+              {
+                appName: "hpyTonWallet",
+                name: "HyperPay Wallet",
+                imageUrl: "https://hyperpay-website.oss-cn-hongkong.aliyuncs.com/static/dist/images/2022-12-30/logo.png",
+                aboutUrl: "https://www.hyperpay.tech",
+                universalLink: "https://www.hyperpay.tech/download&deeplink=hyperpay://web3/wallet/tonconnect",
+                jsBridgeKey: "hpyTonWallet",
+                bridgeUrl: "https://bridge.tonapi.io/bridge",
+                platforms: ["ios", "android"]
+              },
               {
                 appName: "tonwallet",
                 name: "TON Wallet",
