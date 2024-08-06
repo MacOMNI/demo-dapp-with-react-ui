@@ -18,7 +18,7 @@ async function enableMocking() {
 
     const startMockWorker = () => worker.start({
       onUnhandledRequest: 'bypass',
-      quiet: false,
+      quiet: true,
       serviceWorker: {
         url: `${import.meta.env.VITE_GH_PAGES ? '/demo-dapp-with-react-ui' : ''}/mockServiceWorker.js`
       }
